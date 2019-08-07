@@ -112,6 +112,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &57006446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1306413142486574, guid: 09df32d15510946c1bd4325af6219685,
+    type: 3}
+  m_PrefabInstance: {fileID: 794228569}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &57006447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57006446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c831b201a1c09468f0848172e9634f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _RotateSpeed: 60
 --- !u!1 &107028581
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +312,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 24
+  field of view: 29
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -434,3 +453,22 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 10ea481ac7e20254895274714a5ac445, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6fec471c20b9d148b1f87910e67bea4, type: 3}
+--- !u!1 &1958327954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100012, guid: e6fec471c20b9d148b1f87910e67bea4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1680992544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1958327955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958327954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c831b201a1c09468f0848172e9634f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _RotateSpeed: 60
