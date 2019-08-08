@@ -6,6 +6,7 @@ Properties{
 		Tags{
 			"Queue"="Transparent"
 		}
+		Cull Off
 		Blend One One
 		Pass{
 			SetTexture[_MainTex]{combine texture} 

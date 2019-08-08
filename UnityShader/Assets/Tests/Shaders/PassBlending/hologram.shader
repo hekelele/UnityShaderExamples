@@ -7,12 +7,7 @@ Properties{
 		Tags{
 			"Queue"="Transparent"
 		}
-
-		Pass{
-			ZWrite On
-			ColorMask 0
-		}
-
+		
 		CGPROGRAM
 		#pragma surface surf Lambert alpha:fade
 
