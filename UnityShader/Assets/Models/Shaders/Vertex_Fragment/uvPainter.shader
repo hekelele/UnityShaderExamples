@@ -1,5 +1,10 @@
 Shader "Hekelele3/UV_Painter"
 {
+	Properties
+    {
+        uv_color ("uv color", COLOR) = (1,1,1,1)
+    }
+
 	SubShader
 	{
 		Pass
@@ -9,6 +14,8 @@ Shader "Hekelele3/UV_Painter"
 			#pragma fragment frag
 
 			#include "UnityCG.cginc"
+
+			float4 uv_color;
 
 			struct appdata
 			{
@@ -27,9 +34,7 @@ Shader "Hekelele3/UV_Painter"
 				v2f o = (v2f)0;
 				fixed blend = 2;
 				o.vertex = UnityObjectToClipPos(v.vertex);
-				o.color.r = (-v.vertex.x + v.vertex.z + blend)/(10+blend);
-				o.color.g = (-v.vertex.x - v.vertex.z + blend)/(10+blend);
-				o.color.b = ( v.vertex.x + v.vertex.z + blend)/(10+blend);
+				o.color.rgb = uv_color*v.uv.x;
 				return o;
 			}
 
